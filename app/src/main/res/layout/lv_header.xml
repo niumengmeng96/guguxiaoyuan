@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:idv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_one"
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+
+        </android.support.v4.view.ViewPager>
+        <!--指示器-->
+        <com.guguxiaoyuan.nice.utils.IndicatorView
+            android:id="@+id/idv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            idv:indicatorInterval="10dp"
+            idv:isCirculate="true"
+            idv:normalDrawable="@mipmap/cr1"
+            idv:selectDrawable="@mipmap/cr2">
+
+        </com.guguxiaoyuan.nice.utils.IndicatorView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_one">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_one1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#46b9b4"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/iv_run"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/run1"
+                    android:layout_marginLeft="30dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 咕咕跑腿"
+                    android:textColor="#fff"
+                    android:textSize="20sp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_one2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#02f78e"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+
+                >
+                <ImageView
+                    android:id="@+id/iv_car"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/car1"
+                    android:layout_marginLeft="30dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  咕咕拼车"
+                    android:textColor="#fff"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

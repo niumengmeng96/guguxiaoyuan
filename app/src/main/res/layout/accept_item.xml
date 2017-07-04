@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lv_accept_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Accept_item_iv_head_list"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@mipmap/touxiang" />
+
+            <TextView
+                android:id="@+id/Accept_dynamic_tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/item_iv_head_list"
+                android:text="牛萌萌"
+                android:textColor="#2f2c88"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/Accept_dynamic_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="30dp"
+                android:text="3月12日 13:50"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/Accept_tv_rpim_content"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/guide_three" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="谁能赐我一死!"
+                    android:textColor="#121111"
+                    android:id="@+id/Accept_tv_rp_topic"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="80dp" />
+
+                <TextView
+                    android:id="@+id/Accept_tv_rp_content"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="75dp"
+                    android:padding="5dp"
+                    android:text="这世界好看的皮囊太多,有趣的灵魂太少............"
+                    android:textSize="12dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#7c696767" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

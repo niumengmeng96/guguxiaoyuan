@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_iv_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/touxiang" />
+
+                <TextView
+                    android:id="@+id/dynamic_tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/item_iv_head"
+                    android:text="牛萌萌"
+                    android:textColor="#2f2c88"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/dynamic_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="30dp"
+                    android:text="3月12日 13:50"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_rp_content"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_rp_topic"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+
+                        android:text="这世界好看的皮囊太多,
+       有趣的灵魂太少
+            ............"
+                        android:textSize="15dp" />
+
+                    <TextView
+
+                        android:id="@+id/tv_rp_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:text="谁能赐我一死"
+                        android:textColor="#121111"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/tv_rpim_content"
+                    android:layout_width="166dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/guide_three" />
+
+                <Button
+                    android:id="@+id/btn_accept"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#0000"
+                    android:text="接受"
+                    android:textColor="#190"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#7c696767" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#7c696767" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="bottom"-->
+
+
+        <!--&gt;-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_article_comment"-->
+            <!--android:layout_width="340dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/shape_et"-->
+            <!--android:hint="   写评论" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/bt_sendcomment"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/shape_bt"-->
+            <!--android:text="发布"-->
+            <!--android:textColor="#fff"/>-->
+    <!--</LinearLayout>-->
+
+
+</FrameLayout>

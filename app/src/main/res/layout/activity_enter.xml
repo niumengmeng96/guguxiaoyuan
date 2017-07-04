@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/enter"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="实时寻求各种帮助"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/bt_enter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bt_registered"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="登录"
+        android:onClick="enter"
+        android:textColor="#fff"
+        android:textSize="19sp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="255dp"
+        android:text="欢迎使用Gugu"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/bt_registered"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:onClick="registered"
+        android:paddingTop="3dp"
+        android:text="注册"
+        android:textColor="#1ca2da"
+        android:textSize="19dp"
+        />
+
+
+</RelativeLayout>

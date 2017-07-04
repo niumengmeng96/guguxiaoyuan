@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="咕咕拼车"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bt_colseCarRelease"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_common_arrow"
+            android:onClick="close"
+            android:padding="3dp" />
+
+        <Button
+android:onClick="send"
+            android:id="@+id/bt_sendCarRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:text="发送"
+            android:textColor="#46b9b4"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_cartopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:hint="描述"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#7c696767" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/et_provenance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:background="@null"
+                    android:hint="始发地"
+                    android:maxLength="15" />
+
+
+                <EditText
+
+                    android:id="@+id/et_bourn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="220dp"
+                    android:background="@null"
+                    android:hint="目的地"
+                    android:maxLength="15"
+
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/cr" />
+
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#7c696767" />
+
+
+        <EditText
+
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="联系方式"
+            android:maxLength="150" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:onClick="takephoto"
+            android:id="@+id/ib_car_camera_Release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@mipmap/ic_reg_camera" />
+
+        <ImageButton
+            android:onClick="photoalbum"
+            android:id="@+id/ib_car_photo_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_car_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/picture_frame" />
+
+
+</LinearLayout>
+

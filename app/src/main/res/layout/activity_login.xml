@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:hint="******"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_password"
+        android:gravity="center"
+        android:id="@+id/relativeLayout"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/tv_rmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="记住密码"
+            android:textColor="#fff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="17dp" />
+
+        <CheckBox
+            android:id="@+id/cb_rmpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#fff"
+            android:textColor="#fff"
+            android:layout_marginEnd="118dp"
+            android:layout_alignTop="@+id/tv_rmpassword"
+            android:layout_alignEnd="@+id/tv_rmpassword" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_bt"
+
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:id="@+id/registe"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignStart="@+id/et_password"
+        android:onClick="login"/>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:hint="账号"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/im_loginimage"
+        android:layout_alignStart="@+id/et_password" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/im_loginimage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="117dp"
+        android:padding="5dp"
+        android:src="@mipmap/logintouxiang"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

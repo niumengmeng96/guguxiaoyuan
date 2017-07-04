@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/login"
+    >
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_bt"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:layout_marginBottom="76dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:id="@+id/registe"
+       />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Username"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:id="@+id/et_name"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColorHint="#fff"
+        android:hint="Confirm Password"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/shape"
+        android:id="@+id/et_re_password"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:gravity="center"
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:id="@+id/et_password"
+       />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="Email"
+        android:id="@+id/et_email"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:background="@drawable/shape"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GuGu"
+        android:textColor="#fff"
+        android:textSize="60dp"
+        android:id="@+id/tv_name"
+        android:gravity="center_horizontal"
+        android:layout_alignBottom="@+id/et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp" />
+
+
+</RelativeLayout>

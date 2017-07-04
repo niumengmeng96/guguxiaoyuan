@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:idv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_one"
+        android:layout_width="match_parent"
+        android:layout_height="225dp">
+
+    </android.support.v4.view.ViewPager>
+    <!--指示器-->
+    <com.guguxiaoyuan.nice.utils.IndicatorView
+        android:id="@+id/idv_banner"
+        idv:indicatorInterval="10dp"
+        idv:isCirculate="true"
+        idv:normalDrawable="@mipmap/one"
+        idv:selectDrawable="@mipmap/two"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+    </com.guguxiaoyuan.nice.utils.IndicatorView>
+
+</FrameLayout>
