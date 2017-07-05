@@ -2,6 +2,8 @@ package com.guguxiaoyuan.nice.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -102,6 +104,12 @@ public class AcceptActivity extends AppCompatActivity {
 
     private void initView() {
         setContentView(R.layout.activity_accept);
+        if (Build.VERSION.SDK_INT >= 21) {
+            View decorView = getWindow().getDecorView();
+            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+        }
         listView = (ListView) findViewById(R.id.lv_accept);
         swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.srl_accept);
         adapter = new AcceptAdapter(AcceptActivity.this, R.layout.accept_item, acceptlist);

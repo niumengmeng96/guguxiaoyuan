@@ -1,6 +1,8 @@
 package com.guguxiaoyuan.nice.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -52,6 +54,12 @@ public class ListActivity extends AppCompatActivity {
 
     public void initView(){
         setContentView(R.layout.activity_list);
+        if (Build.VERSION.SDK_INT >= 21) {
+            View decorView = getWindow().getDecorView();
+            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+        }
         detail = (TextView) findViewById(R.id.tv_rp_content);
         topic = (TextView) findViewById(R.id.tv_rp_topic);
         username = (TextView) findViewById(R.id.dynamic_tv_user_name);

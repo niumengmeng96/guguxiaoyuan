@@ -35,63 +35,65 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/fl_one">
+        android:layout_below="@+id/fl_one"
+        android:layout_alignParentStart="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
                 android:id="@+id/ll_one1"
                 android:layout_width="0dp"
-                android:layout_height="70dp"
+                android:layout_height="90dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
-                android:background="#46b9b4"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
                 >
                 <ImageView
                     android:id="@+id/iv_run"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@mipmap/run1"
-                    android:layout_marginLeft="30dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/gugupaotui"
+                   android:layout_gravity="center"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" 咕咕跑腿"
-                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textColor="#EDB41C"
                     android:textSize="20sp"/>
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_one2"
                 android:layout_width="0dp"
-                android:layout_height="70dp"
+                android:layout_height="90dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
-                android:background="#02f78e"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-
+                android:orientation="vertical"
+                android:gravity="center"
                 >
                 <ImageView
                     android:id="@+id/iv_car"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@mipmap/car1"
-                    android:layout_marginLeft="30dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/gugupinche"
+
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="  咕咕拼车"
-                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textColor="#37CB45"
                     android:textSize="20sp"/>
 
             </LinearLayout>

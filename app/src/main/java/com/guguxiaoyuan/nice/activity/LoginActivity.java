@@ -4,6 +4,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -128,6 +130,12 @@ public class LoginActivity extends BaseActivity {
     private void initView(){
 
         setContentView(R.layout.activity_login);
+        if (Build.VERSION.SDK_INT >= 21) {
+            View decorView = getWindow().getDecorView();
+            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+        }
         mUsername = (EditText) findViewById(R.id.et_username);
         mPasswrod = (EditText) findViewById(R.id.et_password);
         mPasswrod.setTransformationMethod(PasswordTransformationMethod.getInstance());

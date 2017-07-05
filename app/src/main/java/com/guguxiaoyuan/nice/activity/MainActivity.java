@@ -235,6 +235,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initMenu() {
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -243,7 +244,7 @@ public class MainActivity extends BaseActivity {
         actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.mipmap.cebianlan);
+            actionBar.setHomeAsUpIndicator(R.mipmap.mainmunu);
         }
 
 
@@ -737,7 +738,7 @@ public class MainActivity extends BaseActivity {
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
 
         int[] image = {R.drawable.ic_mic_black_24dp, R.drawable.ic_favorite_black_24dp,
-                R.drawable.ic_book_black_24dp, R.drawable.github_circle};
+                R.drawable.ic_book_black_24dp, R.drawable.github_circle,R.mipmap.mainhome};
         int[] color = {ContextCompat.getColor(this, R.color.firstColor), ContextCompat.getColor(this, R.color.secondColor),
                 ContextCompat.getColor(this, R.color.thirdColor), ContextCompat.getColor(this, R.color.fourthColor)};
 
@@ -753,7 +754,7 @@ public class MainActivity extends BaseActivity {
         }
 
         BottomNavigationItem bottomNavigationItem = new BottomNavigationItem
-                ("主页", color[0], image[2]);
+                ("主页", color[0], image[4]);
 
         BottomNavigationItem bottomNavigationItem2 = new BottomNavigationItem
                 ("趣文", color[0], image[1]);

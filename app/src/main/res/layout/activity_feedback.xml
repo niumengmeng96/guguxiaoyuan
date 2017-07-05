@@ -10,7 +10,7 @@
         android:text="软件反馈"
         android:textSize="25sp"
         android:gravity="center"
-        android:background="@color/firstColor"
+        android:background="#1e90ff"
         android:textColor="#fff"/>
 
 
@@ -36,10 +36,11 @@
             android:maxLines="2"
             android:id="@+id/et_inputMsg"/>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape_bt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/sendjiantou"
             android:text="发送"
+
             android:textSize="16sp"
             android:textColor="#fff"
             android:id="@+id/bt_sendMsg"/>

@@ -3,9 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#00BCD4</item>
-        <item name="colorPrimaryDark">#46b9b4</item>
-        <item name="colorAccent">#00BCD4</item>
+        <item name="colorPrimary">#1e90ff</item>
+        <item name="colorPrimaryDark">#1e90ff</item>
+        <item name="colorAccent">#1e90ff</item>
         <!-- 设置activity切换动画 -->
         <item name="android:windowAnimationStyle">@style/activityAnimation</item>
     </style>

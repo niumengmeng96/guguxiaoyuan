@@ -9,9 +9,9 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#00BCD4</item>
-        <item name="colorPrimaryDark">#46b9b4</item>
-        <item name="colorAccent">#00BCD4</item>
+        <item name="colorPrimary">#00bfff</item>
+        <item name="colorPrimaryDark">#00bfff</item>
+        <item name="colorAccent">#00bfff</item>
 
 
         <!-- 设置activity切换动画 -->
